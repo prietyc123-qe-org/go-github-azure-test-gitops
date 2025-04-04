@@ -10,6 +10,9 @@ container:
   image: quay.io/redhat-appstudio/rhtap-task-runner:latest
   options: --privileged
 
+variables:
+- group: pkumari-variables
+
 steps:
   - bash: |
       echo "• gather-deploy-images"
